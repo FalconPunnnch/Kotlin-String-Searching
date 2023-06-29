@@ -13,16 +13,16 @@
 3. Compara los caracteres del patrón con los del texto objetivo, uno a uno, correspondientemente.
 4. Si los caracteres son los mismos, se han encontrado coincidencias entre ambos strings. A este punto se puede elegir si solo indicar la posición de coincidencia o si contar el número de ocurrencias a lo largo del Texto Objetivo.
 5. Si los caracteres son diferentes, se desliza el patrón de búsqueda hacia adelante en el texto objetivo y se repite el proceso de comparación.
-	6. Se continúa deslizando hasta encontrar todas las coinicidencias en el texto objetivo.
-	7. Resultado deseado según indicación elegida de Paso_4.
+6. Se continúa deslizando hasta encontrar todas las coinicidencias en el texto objetivo.
+7. Resultado deseado según indicación elegida de Paso_4.
 
 
 **Pros:**
-	- Sencillo de entender.
-	- Base para comprender conceptos más avanzados de Pattern Matching
+- Sencillo de entender.
+- Base para comprender conceptos más avanzados de Pattern Matching
 	
 **Contras:**
-	- Ineficiente con cadenas muy grandes de búsqueda, por alto número de comparaciones.
+- Ineficiente con cadenas muy grandes de búsqueda, por alto número de comparaciones.
 
 
 
@@ -32,27 +32,27 @@
 *Utiliza información previa para evitar comparaciones innecesarias.*
 
 **Paso a paso:**
-	1. Construcción de tabla LPS de prefijos(longest proper prefix suffix):
-		- Tiene la misma longitud que el patrón de búsqueda.
-		- Se inicia con ceros.
-		- Se recorre patrón desde segundo caracter hasta el último y en cada posición se calcula valor de LPS.
-		- Valor de LPS indica longitud de prefijo más largo, que también es sufijo propio del patrón.
-	2. Búsqueda usando algoritmo KMP
-		- Se inician dos índices: i para texto objetivo, j para patrón de búsqueda.
-		- Se itera i mientras su valor sea menor a la longitud del texto:
-			-> Si T[i] = P[j], se incrementan ambos índices en 1.
-			-> Si j = longitud del patrón de búsqueda, se ha encontrado una coincidencia entre ambos. (Se puede hacer una o más búsquedas, al actualizar el índice j en la tabla LPS y ajustar i en función de j, según se solicite).
-			-> Si T[i] ≠ P[j], se actualiza j con la tabla LPS. (Si j ≠ 0, j disminuye en 1, caso contrario se incrementa en 1).
+1. Construcción de tabla LPS de prefijos(longest proper prefix suffix):
+	- Tiene la misma longitud que el patrón de búsqueda.
+	- Se inicia con ceros.
+	- Se recorre patrón desde segundo caracter hasta el último y en cada posición se calcula valor de LPS.
+	- Valor de LPS indica longitud de prefijo más largo, que también es sufijo propio del patrón.
+2. Búsqueda usando algoritmo KMP
+	- Se inician dos índices: i para texto objetivo, j para patrón de búsqueda.
+	- Se itera i mientras su valor sea menor a la longitud del texto:
+		-> Si T[i] = P[j], se incrementan ambos índices en 1.
+		-> Si j = longitud del patrón de búsqueda, se ha encontrado una coincidencia entre ambos. (Se puede hacer una o más búsquedas, al actualizar el índice j en la tabla LPS y ajustar i en función de j, según se solicite).
+		-> Si T[i] ≠ P[j], se actualiza j con la tabla LPS. (Si j ≠ 0, j disminuye en 1, caso contrario se incrementa en 1).
 
 
 **Pros:**
 	- Eficiente en tiempo al comparar las longitudes del texto objetivo y patrón de búsqueda.
-	- Al usar la tabla LPS reduce número total de comparaciones.
-	- Salta coincidencias parciales(subpatrones repetidos), gracias al LPS.
+ 	- Al usar la tabla LPS reduce número total de comparaciones.
+  	- Salta coincidencias parciales(subpatrones repetidos), gracias al LPS.
 
 **Contras:**
 	- Puede ser más complejo de implementar al usar dos índices. Es propenso a errores.
-	- Requiere memoria adicional 
+ 	- Requiere memoria adicional 
 
 
 
