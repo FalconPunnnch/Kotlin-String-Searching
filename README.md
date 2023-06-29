@@ -46,13 +46,13 @@
 
 
 **Pros:**
-	- Eficiente en tiempo al comparar las longitudes del texto objetivo y patrón de búsqueda.
- 	- Al usar la tabla LPS reduce número total de comparaciones.
-  	- Salta coincidencias parciales(subpatrones repetidos), gracias al LPS.
+- Eficiente en tiempo al comparar las longitudes del texto objetivo y patrón de búsqueda.
+- Al usar la tabla LPS reduce número total de comparaciones.
+- Salta coincidencias parciales(subpatrones repetidos), gracias al LPS.
 
 **Contras:**
-	- Puede ser más complejo de implementar al usar dos índices. Es propenso a errores.
- 	- Requiere memoria adicional 
+- Puede ser más complejo de implementar al usar dos índices. Es propenso a errores.
+- Requiere memoria adicional 
 
 
 
@@ -74,11 +74,11 @@ __Paso a paso:__
 
 
 **Pros:**
-	- Eficiente en textos objetivo grandes, ya que realiza grandes saltos de caracteres en los strings en función de los no coincidientes.
-	- Menos comparaciones necesarias.
-	- Buen rendimiento con patrones largos, gracias a las tablas de saltos.
-	- Admite múltiples patrones de búsqueda en un solo texto.
+- Eficiente en textos objetivo grandes, ya que realiza grandes saltos de caracteres en los strings en función de los no coincidientes.
+- Menos comparaciones necesarias.
+- Buen rendimiento con patrones largos, gracias a las tablas de saltos.
+- Admite múltiples patrones de búsqueda en un solo texto.
 
 **Contras:**
-	- Requiere procesamiento previo de los patrones de búsqueda, lo que puede consumir tiempo y recursos adicionales, más si hay muchos patrones o éstos se cambian frecuentemente.
-	- Ineficiente con alfabetos grandes, como con caracteres Unicode, pues requieren más memoria y tiempo de ejecución.
+- Requiere procesamiento previo de los patrones de búsqueda, lo que puede consumir tiempo y recursos adicionales, más si hay muchos patrones o éstos se cambian frecuentemente.
+- Ineficiente con alfabetos grandes, como con caracteres Unicode, pues requieren más memoria y tiempo de ejecución.
