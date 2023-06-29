@@ -38,8 +38,6 @@ private fun createBadCharacterTable(pattern: String): IntArray {
     return table
 }
 
-
-
 // Función para crear la tabla de saltos de sufijos
 private fun createGoodSuffixTable(pattern: String): IntArray{
     val table = IntArray(pattern.length)
@@ -130,8 +128,6 @@ fun boyerMooreSearch(pattern: String, text: String): List<Int>{
 
 
 
-
-
 //Knuth-Morris-Pratt(KMP)
 fun construirTablaLPS(patronKMP: String): IntArray{
     val m = patronKMP.length
@@ -185,9 +181,9 @@ fun buscarKMP(texto: String, patronKMP: String){
 
 
 
-//Implementación
+//Implementación Simple
 fun main(){
-//Fuerza Bruta
+    //Fuerza Bruta
     val scanner = Scanner(System.`in`)
     val textoFB = "Hola, esto es un ejemplo de búsqueda de patrón"
 
@@ -203,7 +199,7 @@ fun main(){
         println("El patrón no se encontró en el texto.")
     }
 
-//Boyer-Moore
+    //Boyer-Moore
     val text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     val pattern = "ipsum"
 
@@ -214,7 +210,7 @@ fun main(){
         println("El patrón \"$pattern\" no se encontró en el texto.")
     }
 
-//KMP
+    //KMP
     val texto = "Lorem ipsum dolor sit amet"
     val patronKMP = "ipsum"
 
