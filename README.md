@@ -25,7 +25,7 @@
 - Ineficiente con cadenas muy grandes de búsqueda, por alto número de comparaciones.
 
 
-###
+### ㅤㅤ
 
 
 ### KMP: Knuth-Morris-Pratt:
@@ -55,7 +55,7 @@
 - Requiere memoria adicional 
 
 
-###
+### ㅤㅤ
 
 
 ### Boyer-Moore:
