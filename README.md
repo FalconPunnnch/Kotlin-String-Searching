@@ -69,8 +69,8 @@ __Paso a paso:__
 	4. Actualización de posición del patrón de búsqueda: Si hay más coincidencias, se continúa desplazando y comparando hasta encontrar una coincidencia completa o ninguna otra.
 	5. Según la implementación, se repiten los Pasos2-4 hasta el final del texto objetivo.
 
-	-> *Tabla de saltos de caracteres mal emparejados* (Bad Character Shift Table): Indica cuántos caracteres podemos saltar en el texto objetivo al encontrar alguno que no coincida con el patrón de búsqueda.
-	-> *Tabla de saltos de sufijos* (Good Suffix Shift Table): Indica cuántos caracteres podemos saltar si existe coincidencia parcial con el texto objetivo y el patrón de búsqueda.
+	-> Tabla de saltos de caracteres mal emparejados (Bad Character Shift Table): Indica cuántos caracteres podemos saltar en el texto objetivo al encontrar alguno que no coincida con el patrón de búsqueda.
+	-> Tabla de saltos de sufijos (Good Suffix Shift Table): Indica cuántos caracteres podemos saltar si existe coincidencia parcial con el texto objetivo y el patrón de búsqueda.
 
 
 **Pros:**
