@@ -40,9 +40,9 @@
 2. Búsqueda usando algoritmo KMP
 	- Se inician dos índices: i para texto objetivo, j para patrón de búsqueda.
 	- Se itera i mientras su valor sea menor a la longitud del texto:
-		-> Si T[i] = P[j], se incrementan ambos índices en 1.
-		-> Si j = longitud del patrón de búsqueda, se ha encontrado una coincidencia entre ambos. (Se puede hacer una o más búsquedas, al actualizar el índice j en la tabla LPS y ajustar i en función de j, según se solicite).
-		-> Si T[i] ≠ P[j], se actualiza j con la tabla LPS. (Si j ≠ 0, j disminuye en 1, caso contrario se incrementa en 1).
+		- Si T[i] = P[j], se incrementan ambos índices en 1.
+  		- Si j = longitud del patrón de búsqueda, se ha encontrado una coincidencia entre ambos. (Se puede hacer una o más búsquedas, al actualizar el índice j en la tabla LPS y ajustar i en función de j, según se solicite).
+		- Si T[i] ≠ P[j], se actualiza j con la tabla LPS. (Si j ≠ 0, j disminuye en 1, caso contrario se incrementa en 1).
 
 
 **Pros:**
