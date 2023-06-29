@@ -7,8 +7,8 @@
 
 **Paso a paso:**
 1. Toma dos cadenas como entradas:
-- Texto objetivo(dónde se va a buscar)
-- Patrón de búsqueda(lo que se desea encontrar)
+	- Texto objetivo(dónde se va a buscar)
+	- Patrón de búsqueda(lo que se desea encontrar)
 2. Desliza el patrón a lo largo del texto objetivo desde la posición inicial, es decir, desde el primer caracter.
 3. Compara los caracteres del patrón con los del texto objetivo, uno a uno, correspondientemente.
 4. Si los caracteres son los mismos, se han encontrado coincidencias entre ambos strings. A este punto se puede elegir si solo indicar la posición de coincidencia o si contar el número de ocurrencias a lo largo del Texto Objetivo.
