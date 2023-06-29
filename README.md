@@ -22,7 +22,7 @@
 
 **Pros:**
 - Sencillo de entender.
-- Base para comprender conceptos más avanzados de Pattern Matching
+- Base para comprender conceptos más avanzados de Pattern Matching.
 	
 **Contras:**
 - Ineficiente con cadenas muy grandes de búsqueda, por alto número de comparaciones.
@@ -40,7 +40,7 @@
 	- Se inicia con ceros.
 	- Se recorre patrón desde segundo caracter hasta el último y en cada posición se calcula valor de LPS.
 	- Valor de LPS indica longitud de prefijo más largo, que también es sufijo propio del patrón.
-2. Búsqueda usando algoritmo KMP
+2. Búsqueda usando algoritmo KMP:
 	- Se inician dos índices: i para texto objetivo, j para patrón de búsqueda.
 	- Se itera i mientras su valor sea menor a la longitud del texto:
 		- Si T[i] = P[j], se incrementan ambos índices en 1.
@@ -55,7 +55,7 @@
 
 **Contras:**
 - Puede ser más complejo de implementar al usar dos índices. Es propenso a errores.
-- Requiere memoria adicional 
+- Requiere memoria adicional.
 
 
 ### ㅤㅤ
