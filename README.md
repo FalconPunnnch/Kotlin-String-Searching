@@ -26,7 +26,7 @@
 
 
 ### ㅤㅤ
-
+### ㅤㅤ
 
 ### KMP: Knuth-Morris-Pratt:
 *Utiliza información previa para evitar comparaciones innecesarias.*
@@ -56,7 +56,7 @@
 
 
 ### ㅤㅤ
-
+### ㅤㅤ
 
 ### Boyer-Moore:
 *Utiliza dos heurísticas clave para obviar secciones no coincidientes con el texto objetivo.*
