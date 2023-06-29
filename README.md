@@ -64,10 +64,10 @@
 __Paso a paso:__
 1. Preposicionamiento del patrón de búsqueda:
 	- Se construyen dos estructuras de datos importantes: la tabla de saltos de caracteres mal emparejados (Bad Character Shift Table), y la tabla de saltos de sufijos (Good Suffix Shift Table).
-   2. Desplazamiento del patrón: hacia la derecha a lo largo del texto objetivo. Se alinea con último caracter de texto objetivo.
-   3. Comparación: se comparan caracteres de derecha a izquierda, si alguno no coincide, se usan tablas de salto para saber cuántos caracteres se pueden saltar.
-   4. Actualización de posición del patrón de búsqueda: Si hay más coincidencias, se continúa desplazando y comparando hasta encontrar una coincidencia completa o ninguna otra.
-   5. Según la implementación, se repiten los Pasos2-4 hasta el final del texto objetivo.
+2. Desplazamiento del patrón: hacia la derecha a lo largo del texto objetivo. Se alinea con último caracter de texto objetivo.
+3. Comparación: se comparan caracteres de derecha a izquierda, si alguno no coincide, se usan tablas de salto para saber cuántos caracteres se pueden saltar.
+4. Actualización de posición del patrón de búsqueda: Si hay más coincidencias, se continúa desplazando y comparando hasta encontrar una coincidencia completa o ninguna otra.
+5. Según la implementación, se repiten los Pasos2-4 hasta el final del texto objetivo.
 
 > Tabla de saltos de caracteres mal emparejados (Bad Character Shift Table): Indica cuántos caracteres podemos saltar en el texto objetivo al encontrar alguno que no coincida con el patrón de búsqueda.
 
