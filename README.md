@@ -5,7 +5,7 @@
 ### Fuerza Bruta:
 *Examina todas las posibles combinaciones de manera exhaustiva.*
 
-	**Paso a paso:**
+**Paso a paso:**
 	1. Toma dos cadenas como entradas:
 		-> Texto objetivo(dónde se va a buscar)
 		-> Patrón de búsqueda(lo que se desea encontrar)
@@ -17,11 +17,11 @@
 	7. Resultado deseado según indicación elegida de Paso_4.
 
 
-	**Pros:**
+**Pros:**
 	- Sencillo de entender.
 	- Base para comprender conceptos más avanzados de Pattern Matching
 	
-	**Contras:**
+**Contras:**
 	- Ineficiente con cadenas muy grandes de búsqueda, por alto número de comparaciones.
 
 
@@ -31,7 +31,7 @@
 ### KMP: Knuth-Morris-Pratt:
 *Utiliza información previa para evitar comparaciones innecesarias.*
 
-	**Paso a paso:**
+**Paso a paso:**
 	1. Construcción de tabla LPS de prefijos(longest proper prefix suffix):
 		- Tiene la misma longitud que el patrón de búsqueda.
 		- Se inicia con ceros.
@@ -45,12 +45,12 @@
 			-> Si T[i] ≠ P[j], se actualiza j con la tabla LPS. (Si j ≠ 0, j disminuye en 1, caso contrario se incrementa en 1).
 
 
-	**Pros:**
+**Pros:**
 	- Eficiente en tiempo al comparar las longitudes del texto objetivo y patrón de búsqueda.
 	- Al usar la tabla LPS reduce número total de comparaciones.
 	- Salta coincidencias parciales(subpatrones repetidos), gracias al LPS.
 
-	**Contras:**
+**Contras:**
 	- Puede ser más complejo de implementar al usar dos índices. Es propenso a errores.
 	- Requiere memoria adicional 
 
@@ -61,7 +61,7 @@
 ### Boyer-Moore:
 *Utiliza dos heurísticas clave para obviar secciones no coincidientes con el texto objetivo.*
 
-	__Paso a paso:__
+__Paso a paso:__
 	1. Preposicionamiento del patrón de búsqueda:
 		- Se construyen dos estructuras de datos importantes: la tabla de saltos de caracteres mal emparejados (Bad Character Shift Table), y la tabla de saltos de sufijos (Good Suffix Shift Table).
 	2. Desplazamiento del patrón: hacia la derecha a lo largo del texto objetivo. Se alinea con último caracter de texto objetivo.
@@ -72,12 +72,13 @@
 	-> *Tabla de saltos de caracteres mal emparejados* (Bad Character Shift Table): Indica cuántos caracteres podemos saltar en el texto objetivo al encontrar alguno que no coincida con el patrón de búsqueda.
 	-> *Tabla de saltos de sufijos* (Good Suffix Shift Table): Indica cuántos caracteres podemos saltar si existe coincidencia parcial con el texto objetivo y el patrón de búsqueda.
 
-	**Pros:**
+
+**Pros:**
 	- Eficiente en textos objetivo grandes, ya que realiza grandes saltos de caracteres en los strings en función de los no coincidientes.
 	- Menos comparaciones necesarias.
 	- Buen rendimiento con patrones largos, gracias a las tablas de saltos.
 	- Admite múltiples patrones de búsqueda en un solo texto.
 
-	**Contras:**
+**Contras:**
 	- Requiere procesamiento previo de los patrones de búsqueda, lo que puede consumir tiempo y recursos adicionales, más si hay muchos patrones o éstos se cambian frecuentemente.
 	- Ineficiente con alfabetos grandes, como con caracteres Unicode, pues requieren más memoria y tiempo de ejecución.
