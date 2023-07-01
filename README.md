@@ -1,6 +1,6 @@
 # Kotlin-String-Searching
 
-## Conceptos generales de Búsqueda de Cadenas: String dentro de String.
+## 3 algoritmos de Búsqueda de Cadenas: String dentro de String.
 
 ### Fuerza Bruta:
 *Examina todas las posibles combinaciones de manera exhaustiva.*
