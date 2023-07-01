@@ -185,7 +185,7 @@ fun buscarKMP(texto: String, patronKMP: String){
 fun main(){
     //Fuerza Bruta
     val scanner = Scanner(System.`in`)
-    val textoFB = "Hola, esto es un ejemplo de búsqueda de patrón"
+    val textoFB = "Hola mundo! Esta es una prueba simple."
 
     print("Ingrese el patrón a buscar: ")
     val patron = scanner.nextLine()
@@ -199,9 +199,16 @@ fun main(){
         println("El patrón no se encontró en el texto.")
     }
 
+    //KMP
+    val texto = "Hola mundo! Esta es una prueba simple."
+    val patronKMP = "mundo"
+
+    buscarKMP(texto, patronKMP)
+
+    
     //Boyer-Moore
-    val text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    val pattern = "ipsum"
+    val text = "Hola mundo! Esta es una prueba simple."
+    val pattern = "simple"
 
     val indices = boyerMooreSearch(pattern, text)
     if(indices.isNotEmpty()){
@@ -209,10 +216,4 @@ fun main(){
     }else{
         println("El patrón \"$pattern\" no se encontró en el texto.")
     }
-
-    //KMP
-    val texto = "Lorem ipsum dolor sit amet"
-    val patronKMP = "ipsum"
-
-    buscarKMP(texto, patronKMP)
 }
