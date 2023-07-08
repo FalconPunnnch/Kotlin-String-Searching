@@ -2,7 +2,7 @@
 
 ## 3 algoritmos de Búsqueda de Cadenas: String dentro de String.
 **ㅤㅤ**
-*Los siguientes algoritmos pueden ser implementados según necesidad.*
+***Los siguientes algoritmos pueden ser implementados según necesidad.***
 
 ### Fuerza Bruta:
 *Examina todas las posibles combinaciones de manera exhaustiva.*
