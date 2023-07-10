@@ -18,7 +18,7 @@
    > A este punto se puede elegir si solo indicar la posición de coincidencia o si contar el número de ocurrencias a lo largo del Texto Objetivo.
    
 6. Si los caracteres son diferentes, se desliza el patrón de búsqueda hacia adelante en el texto objetivo y se repite el proceso de comparación.
-7. Se continúa deslizando hasta encontrar todas las coinicidencias en el texto objetivo.
+7. Se continúa deslizando hasta encontrar todas las coincidencias en el texto objetivo.
 8. Resultado deseado según indicación elegida de Paso_4.
 
 
