@@ -81,7 +81,7 @@ __Heurísticas:__
 
 
 **Pros:**
-- Eficiente en textos objetivo grandes, ya que realiza grandes saltos de caracteres en los strings en función de los no coincidientes.
+- Eficiente en textos objetivo grandes, ya que realiza grandes saltos de caracteres en los strings en función de los no coincidentes.
 - Menos comparaciones necesarias.
 - Buen rendimiento con patrones largos, gracias a las tablas de saltos.
 - Admite múltiples patrones de búsqueda en un solo texto.
