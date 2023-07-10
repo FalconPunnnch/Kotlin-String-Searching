@@ -64,7 +64,7 @@
 ### ㅤㅤ
 
 ### Boyer-Moore:
-*Utiliza dos heurísticas clave para obviar secciones no coincidientes con el texto objetivo.*
+*Utiliza dos heurísticas clave para obviar secciones no coincidentes con el texto objetivo.*
 
 __Paso a paso:__
 1. Preposicionamiento del patrón de búsqueda:
